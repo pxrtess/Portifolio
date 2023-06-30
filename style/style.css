@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+}
+
+.scrolldesabilitado {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.div-carregando {
+    width: 80%;
+    margin-inline: 10%;
+    z-index: 5;
+    position: relative;
+}
+
+.carregando {
+    width: 1%;
+    height: 2em;
+    border-radius: 0.5em;
+    background: linear-gradient(302deg, rgba(175, 83, 252, 1) 0%, rgba(104, 72, 220, 1) 53%, rgba(63, 66, 201, 1) 100%);
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+#fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Navbar */
+
+nav {
+    background-image: url('/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+}
+
+.div-logo {
+    width: min-content;
+    z-index: 2;
+}
+
+.logo {
+    width: 25em;
+}
+
+.onda {
+    position: absolute;
+    bottom: -10px;
+    z-index: 0;
+}
+
+
+.links {
+    z-index: 2;
+    display: flex;
+    margin-left: auto;
+    margin-right: 2em;
+    background: rgb(175, 83, 252);
+    background: linear-gradient(302deg, rgba(175, 83, 252, 1) 0%, rgba(104, 72, 220, 1) 53%, rgba(63, 66, 201, 1) 100%);
+    height: min-content;
+    padding: 2em;
+    padding-inline: 1em;
+    border-radius: 2em;
+}
+
+.links a {
+    text-decoration: none;
+    margin: auto;
+    color: white;
+    transition: 0.2s;
+    font-weight: bold;
+    margin-inline: 1em;
+}
+
+.drop-links {
+    display: none;
+}
+
+/* Corpo */
+
+.div-redes a {
+    color: gray;
+}
+
+.container {
+    display: none;
+    position: relative;
+}
+
+.div-bem-vindo {
+    width: 50%;
+    position: relative;
+    z-index: 4;
+}
+
+.div-bem-vindo p {
+    width: 80%;
+}
+
+.btn-contato {
+    color: white;
+    background-color: grey;
+    border: 0;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    padding-inline: 0.5em;
+    background-color: #ac42ff;
+    transition: 0.2s;
+    margin-left: auto;
+}
+
+.btn-contato:hover {
+    color: #ac42ff;
+    background-color: white;
+    border: 0.2em solid #ac42ff;
+}
+
+.form-contato {
+    margin-left: 10%;
+    margin-right: 30%;
+    margin-top: 5em;
+    width: 60%;
+    padding: 2em;
+    border: 0.5em solid #ac42ff;
+    border-radius: 2em;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    display: none;
+}
+
+.div-ft {
+    margin-left: auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    background-color: grey;
+    overflow: hidden;
+}
+.div-projetos{
+    position: relative;
+    z-index: 3;
+}
+.projetos {
+    display: flex;
+}
+
+.card {
+    z-index: 0;
+    margin: 1em;
+}
+
+.sobre-mim {
+    position: relative;
+    z-index: 2;
+    color: white;
+    background-color: #ac42ff;
+    margin: -10%;
+    margin-top: 0px;
+}
+.sobre-mim p{
+    margin-inline: 10%;
+}
+.onda_final{
+    position: absolute;
+    margin: -20%;
+    z-index: 0;
+}
+
+/* Icones */
+ion-icon {
+    font-size: 38px;
+}
+
+.uil::before {
+    font-size: 3em;
+}
+
+.fa-brands::before {
+    font-size: 3em;
+}
+
+.uil-envelope-alt::before {
+    font-size: 1.5em;
+}
+
+.link-github:hover .uil-github::before {
+    color: black;
+}
+
+.link-whatsapp:hover .uil-whatsapp-alt::before {
+    color: #46d93c;
+}
+
+.link-linkedin:hover .uil-linkedin::before {
+    color: #0079b2;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 1040px) {
+
+    /* nav {
+        background: none;
+    } */
+    .div-ft {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .div-bem-vindo {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .links {
+        display: none;
+    }
+
+    .drop-links {
+        display: auto;
+    }
+
+    .logo {
+        width: 20em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 18em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logo {
+        width: 13em;
+    }
+}

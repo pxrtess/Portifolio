@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <script type="text/javascript" src="/js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Pedro Portes - Projetos</title>
+</head>
+
+<body id="body">
+    <div id="fundo"></div>
+    <nav class="navbar">
+        <div class="div-logo">
+            <img class="logo" src="/img/logo.png">
+        </div>
+        <div class="links">
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#sobreMim" class="nav-link">Sobre mim</a>
+            <a href="https://github.com/pxrtess" class="link-github"><i class="uil uil-github"></i></a>
+        </div>
+        <div class="drop-links">
+            <button class="btn btn-default"><i class="uil uil-bars"></i></button>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="onda">
+            <path fill="white" fill-opacity="1"
+                d="M0,160L48,149.3C96,139,192,117,288,128C384,139,480,181,576,170.7C672,160,768,96,864,74.7C960,53,1056,75,1152,90.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </nav>
+    <div class="div-carregando" id="div-carregando">
+        <br>
+        <h1>Carregando...</h1>
+        <div class="carregando" id="carregando"></div>
+    </div>
+    <div class="container" id="conteudo">
+        <div class="flex">
+            <div class="div-bem-vindo">
+                <h1>Olá, bem vindo a minha pagina de apresentação!</h1>
+                <br>
+                <p>Aqui estão dispostos os meus projetos e um pouco da minha trajetória na área de programação até aqui
+                    :)
+                </p>
+                <div class="flex" style="width: 80%;">
+                    <button class="btn-contato" onclick="formContato()">Entre em contato! <i class="uil uil-envelope-alt"></i></button>
+                </div>
+                <form class="form-contato" id="formContato">
+                    <p style="width: 100%;">Você enviará um email para pedrohenports@gmail.com...</p>
+                    <label>Titúlo email</label>
+                    <input type="text" class="form-control">
+                    <label>Corpo do email</label>
+                    <textarea class="form-control" id="floatingTextarea"></textarea>
+                    <br>
+                    <input type="reset" value="Cancelar" class="btn btn-danger" onclick="formContato()">
+                    <input type="submit" class="btn btn-success">
+                </form>
+                <h6>Redes</h6>
+                <div class="div-redes">
+                    <a class="link-linkedin"><i class="uil uil-linkedin"></i></a>
+                    <a class="link-whatsapp"><i class="uil uil-whatsapp-alt"></i></a>
+                </div><br>
+                <div class="flex">
+                    <div style="margin-right: 3em;">
+                        <h6>Linguagens e tecnologias</h6>
+                        <div>
+                            <i class="uil uil-html5" style="color: rgb(255, 98, 0);"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: blue;"></i>
+                            <i class="fa-brands fa-square-js" style="color: yellow;"></i>
+                            <i class="fa-brands fa-php" style="color:rgb(132, 61, 220)"></i>
+                            <img src="https://iconape.com/wp-content/png_logo_vector/c.png"
+                                style="width: 2.5em;vertical-align:baseline;">
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Frameworks</h6>
+                        <div>
+                            <i class="fa-brands fa-laravel" style="color: red;"></i>
+                            <i class="fa-brands fa-vuejs" style="color: rgb(28, 202, 28);"></i>
+                            <i class="fa-brands fa-react" style="color: blue;"></i>
+                            <ion-icon name="logo-ionic"></ion-icon>
+                            <i class="fa-brands fa-bootstrap" style="color: rgb(188, 0, 188);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-ft">
+                <img class="ft-pedro" src="/img/pessoa-teste.png">
+            </div>
+        </div><br><br>
+        <div class="div-projetos">
+            <h1 class="text-center" id="projetos">Projetos em Grupo</h1><br>
+            <div class="projetos">
+            </div><br><br>
+            <h1 class="text-center">Projetos Individuais</h1><br>
+            <div class="projetos">
+            </div><br><br>
+        </div>
+        <svg class="onda_final" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ad42ff" fill-opacity="1" d="M0,32L120,42.7C240,53,480,75,720,69.3C960,64,1200,32,1320,16L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+          </svg>
+        <div class="sobre-mim text-center">
+            <h1 id="sobreMim">Sobre mim</h1>
+            <p> Sou um desenvolvedor em aprendizado, empolgado em aprender novas
+                tecnologias e aprimorar os conhecimentos que adquiri estudando. Tive contato com
+                HTML5/CSS3, linguagens como C#, C++, PHP e JavaScript, além do uso de
+                frameworks como React Native, Laravel e Bootstrap.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
