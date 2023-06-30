@@ -22,7 +22,9 @@ body {
     background: linear-gradient(302deg, rgba(175, 83, 252, 1) 0%, rgba(104, 72, 220, 1) 53%, rgba(63, 66, 201, 1) 100%);
 }
 
-
+/* .hydrated{
+    visibility:collapse;
+} */
 
 .flex {
     display: flex;
@@ -35,7 +37,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 3;
+    z-index: 5;
     display: none;
 }
 
@@ -118,7 +120,10 @@ nav {
 .div-bem-vindo p {
     width: 80%;
 }
-
+.div-btn-contato{
+    width: 80%;
+    display: flex;
+}
 .btn-contato {
     color: white;
     background-color: grey;
@@ -138,16 +143,19 @@ nav {
 }
 
 .form-contato {
-    margin-left: 10%;
-    margin-right: 30%;
-    margin-top: 5em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     width: 60%;
+    height: fit-content;
     padding: 2em;
     border: 0.5em solid #ac42ff;
     border-radius: 2em;
     position: fixed;
     background-color: white;
     top: 0;
+    z-index: 9;
     display: none;
 }
 
@@ -161,14 +169,12 @@ nav {
 }
 .div-projetos{
     position: relative;
-    z-index: 3;
 }
 .projetos {
     display: flex;
 }
 
 .card {
-    z-index: 0;
     margin: 1em;
     max-width: 15em;
     width: 100%;
@@ -176,7 +182,6 @@ nav {
 
 .sobre-mim {
     position: relative;
-    z-index: 2;
 }
 .icones i, .icones svg, .icones ion-icon{
     margin-inline: 0.2em;
@@ -216,18 +221,21 @@ ion-icon {
 /* Responsividade */
 
 @media only screen and (max-width: 1040px) {
-
-    /* nav {
-        background: none;
-    } */
     .div-ft {
         display: none;
+    }
+    .div-btn-contato{
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 990px) {
     .div-bem-vindo {
         width: 100%;
+    }
+    .form-contato{
+        margin: 5%;
+        width: fit-content;
     }
 }
 

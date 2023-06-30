@@ -19,6 +19,23 @@
 </head>
 
 <body id="body">
+    <form class="form-contato" id="formContato" action="https://formsubmit.co/pedrohenports@gmail.com" method="POST">
+        <p style="width: 100%;">Você enviará um email para pedrohenports@gmail.com...</p>
+        <label>Nome</label>
+        <input placeholder="Digite seu nome..." name="name" type="text" class="form-control" required>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Digite seu email..." class="form-control" required>
+        <label>Assunto</label>
+        <input name="_subject" type="text" class="form-control" placeholder="Digite um titúlo para o email...">
+        <label>Corpo do email</label>
+        <textarea class="form-control" name="message" id="floatingTextarea" placeholder="Digite uma mensagem..." required></textarea>
+        <br>
+        <input type="hidden" name="_next" value="https://portifolio-pedro-portes.netlify.app">
+        <input type="text" name="_honey" style="display:none">
+
+        <input type="reset" value="Cancelar" class="btn btn-danger" onclick="formContato()">
+        <input type="submit" class="btn btn-success">
+    </form>
     <div id="fundo"></div>
     <nav class="navbar">
         <div class="div-logo">
@@ -27,6 +44,7 @@
         <div class="links">
             <a href="#projetos" class="nav-link">Projetos</a>
             <a href="#sobreMim" class="nav-link">Sobre mim</a>
+            <a href="#formacoes" class="nav-link">Formações</a>
             <a href="https://github.com/pxrtess" target="_blank" class="link-github"><i class="uil uil-github"></i></a>
         </div>
         <div class="drop-links">
@@ -51,20 +69,10 @@
                 <p>Aqui estão dispostos os meus projetos e um pouco da minha trajetória na área de programação até aqui
                     :)
                 </p>
-                <div class="flex" style="width: 80%;">
+                <div class="div-btn-contato">
                     <button class="btn-contato" onclick="formContato()">Entre em contato! <i
                             class="uil uil-envelope-alt"></i></button>
                 </div>
-                <form class="form-contato" id="formContato">
-                    <p style="width: 100%;">Você enviará um email para pedrohenports@gmail.com...</p>
-                    <label>Titúlo email</label>
-                    <input type="text" class="form-control">
-                    <label>Corpo do email</label>
-                    <textarea class="form-control" id="floatingTextarea"></textarea>
-                    <br>
-                    <input type="reset" value="Cancelar" class="btn btn-danger" onclick="formContato()">
-                    <input type="submit" class="btn btn-success">
-                </form>
                 <h6>Redes e Contato</h6>
                 <div class="div-redes">
                     <a class="link-linkedin"><i class="uil uil-linkedin"></i></a>
@@ -174,14 +182,15 @@
             </div><br><br>
         </div>
         <div class="sobre-mim">
-            <h1 id="sobreMim" class="text-center">Sobre mim</h1>
-            <h2>Formações</h2>
-            <h5><strong>Tecnico em Desenvolvimento de Sistemas</strong> Termino 06/2023</h5>
+            <h1 id="sobreMim" class="text-center">Sobre mim</h1><br>
             <p class="text-center"> Sou um desenvolvedor em aprendizado, empolgado em aprender novas
                 tecnologias e aprimorar os conhecimentos que adquiri estudando. Tive contato com
                 HTML5/CSS3, linguagens como C#, C++, PHP e JavaScript, além do uso de
                 frameworks como React Native, Laravel e Bootstrap.
-            </p>
+            </p><br><br>
+            <h2 id="formacoes">Formações</h2><br>
+            <h5><strong>Tecnico em Desenvolvimento de Sistemas</strong></h5>
+            <h6>ETEC Doutora Ruth Cardoso -  Termino 2023</h6>
         </div>
     </div>
 
