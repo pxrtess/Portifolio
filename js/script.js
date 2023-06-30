@@ -53,6 +53,7 @@ function carregando() {
       function frame() {
         if (width >= 100) {
           clearInterval(id);
+          document.getElementById("fundo").style.display = "none"
           document.getElementById("div-carregando").style.display = "none"
           document.getElementById("conteudo").style.display = "block"
           carregarProjetos();
