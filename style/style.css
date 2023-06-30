@@ -170,26 +170,21 @@ nav {
 .card {
     z-index: 0;
     margin: 1em;
+    max-width: 15em;
+    width: 100%;
 }
 
 .sobre-mim {
     position: relative;
     z-index: 2;
-    color: white;
-    background-color: #ac42ff;
-    margin: -10%;
-    margin-top: 0px;
 }
-.sobre-mim p{
-    margin-inline: 10%;
+.icones i, .icones svg, .icones ion-icon{
+    margin-inline: 0.2em;
 }
-.onda_final{
-    position: absolute;
-    margin: -20%;
-    z-index: 0;
-}
-
 /* Icones */
+.div-icones{
+    display: flex;
+}
 ion-icon {
     font-size: 38px;
 }
@@ -239,6 +234,12 @@ ion-icon {
 @media only screen and (max-width: 800px) {
     .links {
         display: none;
+    }
+    .div-icones{
+        display: block;
+    }
+    .div-icones .icones{
+        margin-bottom: 1em;
     }
 
     .drop-links {
