@@ -65,7 +65,7 @@ nav {
 }
 
 .logo {
-    width: 25em;
+    width: 20em;
 }
 
 .onda {
@@ -80,7 +80,6 @@ nav {
     display: flex;
     margin-left: auto;
     margin-right: 2em;
-    background: rgb(175, 83, 252);
     background: linear-gradient(302deg, rgba(175, 83, 252, 1) 0%, rgba(104, 72, 220, 1) 53%, rgba(63, 66, 201, 1) 100%);
     height: min-content;
     padding: 2em;
@@ -98,7 +97,34 @@ nav {
 }
 
 .drop-links {
+    position: relative;
+    z-index: 5;
     display: none;
+    margin-right: 3em;
+    border-radius: 0.4em;
+    padding: 1em;
+    border: 0px solid;
+    background: linear-gradient(302deg, rgba(175, 83, 252, 1) 0%, rgba(104, 72, 220, 1) 53%, rgba(63, 66, 201, 1) 100%);
+}
+.div-drop-links {
+    position: relative;
+    z-index: 5;
+    display: none;
+}
+.div-drop-links .dropdown{
+    background-color: white;
+    border: solid 3px purple;
+    border-radius: 0.3em; 
+    width: 10em;
+    margin-top: 3em;
+}
+.dropdown a{
+    width: 100%;
+    height: 2em;
+    margin-top: 0.5em;
+}
+.dropdown a:hover{
+    background-color: rgb(220, 220, 220);
 }
 
 /* Corpo */
@@ -121,10 +147,12 @@ nav {
 .div-bem-vindo p {
     width: 80%;
 }
-.div-btn-contato{
+
+.div-btn-contato {
     width: 80%;
     display: flex;
 }
+
 .btn-contato {
     color: white;
     background-color: grey;
@@ -143,21 +171,29 @@ nav {
     border: 0.2em solid #ac42ff;
 }
 
-.form-contato {
+.div-form {
+    background: linear-gradient(302deg, rgba(63, 66, 201, 1) 0%, rgba(104, 72, 220, 1) 53%, rgb(195, 122, 255) 100%);
+    padding: 0.4em;
+    border-radius: 2em;
+    display: none;
+    position: fixed;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 10%;
     width: 60%;
     height: fit-content;
-    padding: 2em;
-    border: 0.5em solid #ac42ff;
-    border-radius: 2em;
-    position: fixed;
-    background-color: white;
-    top: 0;
     z-index: 9;
-    display: none;
+}
+
+.form-contato {
+    padding: 2em;
+    border-radius: 2em;
+    background-color: white;
+}
+
+.corpo-email {
+    max-height: 20%;
 }
 
 .div-ft {
@@ -168,9 +204,11 @@ nav {
     background-color: grey;
     overflow: hidden;
 }
-.div-projetos{
+
+.div-projetos {
     position: relative;
 }
+
 .projetos {
     display: flex;
 }
@@ -179,18 +217,24 @@ nav {
     margin: 1em;
     max-width: 15em;
     width: 100%;
+    min-width: 15em;
 }
 
 .sobre-mim {
     position: relative;
 }
-.icones i, .icones svg, .icones ion-icon{
+
+.icones i,
+.icones svg,
+.icones ion-icon {
     margin-inline: 0.2em;
 }
+
 /* Icones */
-.div-icones{
+.div-icones {
     display: flex;
 }
+
 ion-icon {
     font-size: 38px;
 }
@@ -225,7 +269,8 @@ ion-icon {
     .div-ft {
         display: none;
     }
-    .div-btn-contato{
+
+    .div-btn-contato {
         width: 100%;
     }
 }
@@ -234,9 +279,10 @@ ion-icon {
     .div-bem-vindo {
         width: 100%;
     }
-    .form-contato{
-        margin: 5%;
+
+    .div-form {
         width: fit-content;
+        margin:5%
     }
 }
 
@@ -244,15 +290,17 @@ ion-icon {
     .links {
         display: none;
     }
-    .div-icones{
+
+    .div-icones {
         display: block;
     }
-    .div-icones .icones{
+
+    .div-icones .icones {
         margin-bottom: 1em;
     }
 
     .drop-links {
-        display: auto;
+        display: block;
     }
 
     .logo {
@@ -266,8 +314,14 @@ ion-icon {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 417px) {
     .logo {
-        width: 13em;
+        width: 11em;
+    }
+    .drop-links{
+        padding: 0.5em;
+    }
+    .drop-links .uil::before{
+        font-size: 2em;
     }
 }
