@@ -8,23 +8,7 @@ body {
     overflow: hidden
 }
 
-.div-carregando {
-    width: 80%;
-    margin-inline: 10%;
-    z-index: 5;
-    position: relative;
-}
 
-.carregando {
-    width: 1%;
-    height: 2em;
-    border-radius: 0.5em;
-    background: linear-gradient(302deg, rgba(175, 83, 252, 1) 0%, rgba(104, 72, 220, 1) 53%, rgba(63, 66, 201, 1) 100%);
-}
-
-/* .hydrated{
-    visibility:collapse;
-} */
 
 .flex {
     display: flex;
@@ -134,7 +118,6 @@ nav {
 }
 
 .container {
-    display: none;
     position: relative;
 }
 
@@ -211,13 +194,48 @@ nav {
 
 .projetos {
     display: flex;
+    justify-content: space-between;
 }
 
 .card {
+    /* width: 20em;
+    height: 12em; */
     margin: 1em;
-    max-width: 15em;
-    width: 100%;
     min-width: 15em;
+}
+.card h3{
+    z-index: 1;
+}
+.card img {
+    width: 100%;
+    z-index: 0;
+    border-radius: 0.2em;
+}
+.card p {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    padding: 0.5em;
+}
+.card-fundo{
+    background-color: rgba(0, 0, 0, 0.542);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+.link-card{
+    color: black;
+    text-decoration: none;
+}
+.card:hover .card-fundo{
+    display: block;
+} 
+.card:hover p{
+    display: block;
+    color: white;
+    z-index: 6;
 }
 
 .sobre-mim {

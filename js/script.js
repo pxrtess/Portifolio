@@ -3,19 +3,19 @@ projetos = [{
   nome: 'Skedoo - TCC',
   descricao: 'Sistema de gestão voltado a instituições de ensino infantil, desenvolvido em php juntamente com laravel, possui funções como Realtime Chat, cadastro de eventos em calendário, tabela de pagamentos e visualização em dashboard',
   link: '#',
-  img: '',
+  img: 'skedoo.png',
   tipo: 'grupo'
 }, {
   nome: 'Biblioteca',
-  descricao: 'Sistema desenvolvido em React consumindo a API Google Books',
-  link: '#',
-  img: '',
+  descricao: 'Projeto de simulação de um sistema de biblioteca online, consumindo a API Google Books',
+  link: 'https://biblioteca-pedro.netlify.app/',
+  img: 'biblioteca.png',
   tipo: 'grupo'
 }, {
   nome: 'SV Tour',
-  descricao: 'Sistema desenvolvido em React consumindo a API Google Books',
-  link: '#',
-  img: '',
+  descricao: 'Projeto de apresentação da cidade de São Vicente',
+  link: 'https://svtour.netlify.app/',
+  img: 'svtour.png',
   tipo: 'grupo'
 }, {
   nome: 'BuscaCep',
@@ -26,8 +26,8 @@ projetos = [{
 }, {
   nome: 'Hogwarts',
   descricao: 'Projeto de fanpage voltado ao universo de Harry Potter, desenvolvido em PHP',
-  link: '#',
-  img: '',
+  link: 'https://hogwarts-pedro-portes.netlify.app/',
+  img: 'hog.png',
   tipo: 'individual'
 }, {
   nome: 'Castlevania',
@@ -48,7 +48,7 @@ function carregarProjetos() {
   listaEmGrupo = document.getElementById("listaProjetosEmGrupo");
   listaIndividual = document.getElementById("listaProjetosIndividuais");
   for (i = 0; i < projetos.length; i++) {
-    projetos[i].tipo == 'individual' ? listaIndividual.innerHTML += `<div class="card"><h3>` + projetos[i].nome + `</h3><p>` + projetos[i].descricao + `</p></div>` : listaEmGrupo.innerHTML += `<div class="card"><h3>` + projetos[i].nome + `</h3><p>` + projetos[i].descricao + `</p></div>`
+    projetos[i].tipo == 'individual' ? listaIndividual.innerHTML += `<a class="link-card" target="_blank" href=`+projetos[i].link+`><div class="card"><div class="card-fundo"></div><img src='img/`+ projetos[i].img +`'><h3>` + projetos[i].nome + `</h3><p>` + projetos[i].descricao + `</p></div></a>` : listaEmGrupo.innerHTML += `<a  class="link-card" target="_blank" href=`+projetos[i].link+`><div class="card"><div class="card-fundo"></div><img src='img/`+ projetos[i].img +`'><h3>` + projetos[i].nome + `</h3><p>` + projetos[i].descricao + `</p></div></a>`
   }
 }
 var formAberto = false;
@@ -75,25 +75,4 @@ function dropdown() {
   fundo.style.display = dropAberto ? 'block' : 'none'
   scroll.className = dropAberto ? 'scrolldesabilitado' : ''
 }
-var percentual = 0;
-function carregando() {
-  if (percentual == 0) {
-    percentual = 1;
-    var elem = document.getElementById("carregando");
-    var width = 1;
-    var id = setInterval(frame, 15);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        document.getElementById("fundo").style.display = "none"
-        document.getElementById("div-carregando").style.display = "none"
-        document.getElementById("conteudo").style.display = "block"
-        carregarProjetos();
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-}
-setInterval(carregando, 10);
+setTimeout(carregarProjetos, 10);
