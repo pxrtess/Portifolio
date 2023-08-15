@@ -48,7 +48,7 @@ function carregarProjetos() {
   listaEmGrupo = document.getElementById("listaProjetosEmGrupo");
   listaIndividual = document.getElementById("listaProjetosIndividuais");
   for (i = 0; i < projetos.length; i++) {
-    projetos[i].tipo == 'individual' ? listaIndividual.innerHTML += `<a class="link-card" target="_blank" href=`+projetos[i].link+`><div class="card"><div class="card-fundo"></div><img src='img/`+ projetos[i].img +`'><h3>` + projetos[i].nome + `</h3><p>` + projetos[i].descricao + `</p></div></a>` : listaEmGrupo.innerHTML += `<a  class="link-card" target="_blank" href=`+projetos[i].link+`><div class="card"><div class="card-fundo"></div><img src='img/`+ projetos[i].img +`'><h3>` + projetos[i].nome + `</h3><p>` + projetos[i].descricao + `</p></div></a>`
+    projetos[i].tipo == 'individual' ? listaIndividual.innerHTML += `<a class="link-card" target="_blank" href=`+projetos[i].link+`><div class="card"><div class="card-fundo"><p>` + projetos[i].descricao + `</p></div><img src='img/`+ projetos[i].img +`'><h5>` + projetos[i].nome + `</h5></div></a>` : listaEmGrupo.innerHTML += `<a  class="link-card" target="_blank" href=`+projetos[i].link+`><div class="card"><div class="card-fundo"><p>` + projetos[i].descricao + `</p></div><img src='img/`+ projetos[i].img +`'><h5>` + projetos[i].nome + `</h5></div></a>`
   }
 }
 var formAberto = false;
@@ -75,4 +75,4 @@ function dropdown() {
   fundo.style.display = dropAberto ? 'block' : 'none'
   scroll.className = dropAberto ? 'scrolldesabilitado' : ''
 }
-setTimeout(carregarProjetos, 10);
+setTimeout(carregarProjetos, 1000);

@@ -184,8 +184,10 @@ nav {
     width: 400px;
     height: 400px;
     border-radius: 100px;
-    background-color: grey;
     overflow: hidden;
+}
+.ft-pedro{
+    width: 100%;
 }
 
 .div-projetos {
@@ -198,13 +200,14 @@ nav {
 }
 
 .card {
-    /* width: 20em;
-    height: 12em; */
     margin: 1em;
     min-width: 15em;
+    height: 10em;
 }
-.card h3{
+.card h5{
     z-index: 1;
+    text-align: center;
+    margin-top:0.2em;
 }
 .card img {
     width: 100%;
@@ -213,9 +216,11 @@ nav {
 }
 .card p {
     display: none;
+    height: auto;
     position: absolute;
-    z-index: 2;
+    z-index: 6;
     padding: 0.5em;
+    color: white
 }
 .card-fundo{
     background-color: rgba(0, 0, 0, 0.542);
@@ -224,6 +229,7 @@ nav {
     position: absolute;
     z-index: 5;
     display: none;
+    overflow: scroll;
 }
 .link-card{
     color: black;
@@ -234,8 +240,6 @@ nav {
 } 
 .card:hover p{
     display: block;
-    color: white;
-    z-index: 6;
 }
 
 .sobre-mim {
@@ -280,6 +284,19 @@ ion-icon {
 .link-linkedin:hover .uil-linkedin::before {
     color: #0079b2;
 }
+
+/* rodapé */
+footer{
+    display: flex;
+    padding: 1em 2em;
+    background: linear-gradient(302deg, rgba(175, 83, 252, 1) 0%, rgba(104, 72, 220, 1) 53%, rgba(63, 66, 201, 1) 100%);
+    justify-content: end;
+}
+footer a{
+    color: whitesmoke;
+    margin: auto 0.5em auto;
+}
+
 
 /* Responsividade */
 
