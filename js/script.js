@@ -13,7 +13,7 @@ projetos = [{
   tipo: 'grupo'
 }, {
   nome: 'SV Tour',
-  descricao: 'Projeto de apresentação da cidade de São Vicente',
+  descricao: 'Projeto de apresentação da cidade de São Vicente, projeto de conclusão de primerio módulo na matéria de Programação Web da ETEC',
   link: 'https://svtour.netlify.app/',
   img: 'svtour.png',
   tipo: 'grupo'
@@ -29,17 +29,18 @@ projetos = [{
   link: 'https://hogwarts-pedro-portes.netlify.app/',
   img: 'hog.png',
   tipo: 'individual'
-}, {
-  nome: 'Castlevania',
-  descricao: 'Projeto de fanpage voltado ao universo de castlevania, desenvolvido em PHP',
-  link: '#',
-  img: '',
+},{
+  nome: 'Lista de Tarefas ',
+  descricao: 'Lista de tarefas codificada em PHP utilizando PDO',
+  link: '',
+  img: 'todolist.png',
   tipo: 'individual'
-}, {
-  nome: 'Pokedex',
-  descricao: 'Projeto de fanpage voltado ao universo de Pokemon, desenvolvido em PHP',
-  link: '#',
-  img: '',
+},
+{
+  nome: 'Realtime Chat',
+  descricao: 'Exemplo sistema de chat em tempo real utilizando javascript e firebase, recomendavél que se abra duas abas para uma melhor visualização.',
+  link: 'https://realtimechat-pedro-portes.netlify.app/',
+  img: 'realtimechat.png',
   tipo: 'individual'
 }]
 

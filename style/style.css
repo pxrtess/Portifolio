@@ -296,7 +296,10 @@ footer a{
     color: whitesmoke;
     margin: auto 0.5em auto;
 }
-
+footer div:first-of-type{
+    margin-right: auto;
+    color: white;
+}
 
 /* Responsividade */
 
