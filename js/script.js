@@ -2,7 +2,7 @@ var projetos = []
 projetos = [{
   nome: 'Skedoo - TCC',
   descricao: 'Sistema de gestão voltado a instituições de ensino infantil, desenvolvido em php juntamente com laravel, possui funções como Realtime Chat, cadastro de eventos em calendário, tabela de pagamentos e visualização em dashboard',
-  link: '#',
+  link: 'https://github.com/Vitor221/Skedoo_TCC',
   img: 'skedoo.png',
   tipo: 'grupo'
 }, {
@@ -18,10 +18,10 @@ projetos = [{
   img: 'svtour.png',
   tipo: 'grupo'
 }, {
-  nome: 'BuscaCep',
-  descricao: 'Sistema de busca de cep utilizando a API BrasilAPI',
-  link: '#',
-  img: '',
+  nome: 'Projeto Netflix',
+  descricao: 'Sistema de catalogos de filmes utilizando a API TheMovieDatabase(TMDB), desenvolvido em PHP e inspirado no streaming Netflix',
+  link: 'https://github.com/pxrtess/projetofilme',
+  img: 'filme.png',
   tipo: 'individual'
 }, {
   nome: 'Hogwarts',
@@ -31,8 +31,8 @@ projetos = [{
   tipo: 'individual'
 },{
   nome: 'Lista de Tarefas ',
-  descricao: 'Lista de tarefas codificada em PHP utilizando PDO',
-  link: '',
+  descricao: 'Lista de tarefas codificada em PHP utilizando PDO, com sistema de login e cadastro, retornando apenas tarefas de determinado usuário',
+  link: 'https://github.com/pxrtess/todolist-PHP',
   img: 'todolist.png',
   tipo: 'individual'
 },
